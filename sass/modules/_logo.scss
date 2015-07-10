@@ -1,0 +1,15 @@
+.logo {
+	@include size(100% 100px);
+	position: static;
+	display: block;
+	background-color: black;
+
+	img {
+		@include size(auto 6.2em);
+		@include padding(1.2em 0 1em 0);
+		float: none;
+		margin: auto;
+		position: static;
+		display: block;
+	}
+}

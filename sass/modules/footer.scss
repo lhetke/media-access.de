@@ -1,0 +1,19 @@
+footer {
+	background-color: black;
+	@include size(100% 3em);
+
+	.impressum {
+		text-align: center;
+		float: none;
+		margin: auto;
+		position: static;
+		display: block;
+		@include padding(0.6em 0 0 0);
+	}
+
+	a {
+		color: white;
+		font-size: $base-font-size *1.2;
+
+	}
+}

@@ -1,0 +1,36 @@
+nav {
+	background-color: black;
+	overflow: hidden;
+	@include size(100% 4em);
+
+	ul {
+		@include outer-container;
+	}
+
+	li {
+		float: left;
+		display: block;
+		text-align: center;
+		@include size(calc(100% / 3) 4em);
+	}
+
+	a {
+		@include padding(0.5em 0 0.5em 0);
+		color: white;
+		font-size: $base-font-size * 1.6;
+		background-color: black;
+		@include size(100% 100%);
+		display: block;
+		@include transition(.4s);
+	}
+
+	a:hover {
+		background-color: lighten($light-gray,10%);
+		color: $dark-gray;
+	}
+
+	.current {
+		background-color: white;
+		color: $dark-gray;
+	}
+}
